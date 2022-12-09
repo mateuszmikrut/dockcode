@@ -1,0 +1,6 @@
+#!/bin/bash
+
+## Userspace
+mkdir -p .config/code-server
+echo -e "bind-addr: 0.0.0.0:8080\nauth: password \npassword: ${DOCKCODEPASS}\ncert: false" > .config/code-server/config.yaml
+code-server
